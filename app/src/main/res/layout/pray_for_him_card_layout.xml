@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardPreventCornerOverlap="false"
+    android:layout_marginTop="10dp"
+    app:cardElevation="2dp">
+
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:transitionName="branchImage"
+                android:clickable="false"
+                app:srcCompat="@drawable/default_profile" />
+            <ProgressBar
+                android:id="@+id/downloadProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            >
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:longClickable="false"
+                android:text="פלוני בן פלוני"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+
+                />
+            <View
+                android:id="@+id/line2"
+                android:layout_width="169dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="#c0c0c0"
+                android:clickable="false"
+                android:longClickable="false"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+                <TextView
+                    android:id="@+id/about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:longClickable="false"
+                    android:textDirection="locale"
+                    android:text="hi my dssss ss ss sss sd  sfsdhgjgvcbvcjkjcvbhcjvbkcvjbhcvbcvkjbhcvbcvkjhvcbcvbjkhcvbkjhcvbcvkjhbcvbcvbcbjkhbvchjghjghjghjghjghjghjghjghjghjghjghjg dfsfjhgf dshjg sdgh sdfhg fyugfdu sdfuy  sfdg iutdf sfdiuy iuy sidu s df sdfsdf sd fname is shd sdf  sdf "
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:id="@+id/cardBranchInUse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/type_pray_image"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_book"
+            android:padding="5dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_message"
+            android:padding="5dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_alert_flag"
+            android:padding="5dp"
+            android:layout_gravity="end"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_down"
+            android:padding="5dp"
+            />
+
+    </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <android.support.v4.widget.NestedScrollView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+              <!-- <TextView
+                   android:padding="5dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/perek12"
+                   android:textDirection="rtl"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintLeft_toLeftOf="parent"
+                   app:layout_constraintRight_toRightOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   android:fontFamily="@font/ezra"
+                   android:includeFontPadding="false"
+                   android:textSize="18dp"
+                   android:textColor="@android:color/black"
+                   android:gravity="start"/>-->
+           </android.support.v4.widget.NestedScrollView>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+              <Button
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="קראתי"/>
+              <Button
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="מצא לי פרק אחר"/>
+
+          </LinearLayout>
+       </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
