@@ -9,16 +9,18 @@ import android.widget.TextView;
 
 import com.prayforme.shmuel.prayforme.R;
 
+import java.util.ArrayList;
+
 /**
  * Created by User on 12/04/2018.
  */
 
 public class AdapterTehilim extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
     Context context;
-    String[] items;
-    String[] perekNum;
+    ArrayList<String> items;
+    ArrayList<String> perekNum;
 
-    public AdapterTehilim(Context context, String[] items, String[] perekNum) {
+    public AdapterTehilim(Context context, ArrayList items, ArrayList perekNum) {
         this.context = context;
         this.items = items;
         this.perekNum = perekNum;
@@ -33,13 +35,13 @@ public class AdapterTehilim extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-        ((ViewHolder)holder).textView.setText(items[position]);
-        ((ViewHolder)holder).perekNumTextView.setText(perekNum[position]);
+        ((ViewHolder)holder).textView.setText(items.get(position));
+        ((ViewHolder)holder).perekNumTextView.setText(perekNum.get(position));
     }
 
     @Override
     public int getItemCount() {
-        return items.length;
+        return items.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{

@@ -12,6 +12,25 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     >
+   <LinearLayout
+       android:padding="5dp"
+       android:id="@+id/readLayout"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <TextView
+           android:id="@+id/numberOfPerakimRead"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="0"
+           android:textColor="@color/colorAccent"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text=" perakim left to finish the sefer"
+           android:textColor="@color/colorAccent"/>
+
+   </LinearLayout>
     <ScrollView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -32,7 +51,8 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="קראתי"/>
+            android:text="קראתי"
+            android:onClick="finishedPerek"/>
         <Button
             android:id="@+id/findAnotherChapter"
             android:layout_width="match_parent"
